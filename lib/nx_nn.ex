@@ -1,17 +1,4 @@
 defmodule NxNn do
-  @moduledoc """
-  Documentation for `NxNn`.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> NxNn.hello()
-      :world
-
-  """
   def get_data() do
     x_test = Dataset.test_image() |> Nx.tensor() |> (& Nx.divide(&1, Nx.reduce_max(&1))).()
     t_test = Dataset.test_label() |> Nx.tensor()
