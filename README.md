@@ -9,7 +9,7 @@ mnistのファイルをダウンロードして、
 Pure NxとXLA backend Nxのベンチマークを走らせます
 
 ```
-iex -s mix
+$ iex -S mix
 iex(1)> Dataset.download(:mnist)
 iex(2)> NxNn.acc
 
